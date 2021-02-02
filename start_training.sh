@@ -1,6 +1,6 @@
 cd ~/TensorFlow/models/research 
 PIPELINE_CONFIG_PATH=gs://object-detection-pipeline-demo/workspace/local/pre-trained-models/ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8/pipeline.config
-MODEL_DIR=gs://object-detection-pipeline-demo/workspace/local/model-checkpoints/2
+MODEL_DIR=gs://object-detection-pipeline-demo/workspace/local/model-checkpoints/3
 NUM_TRAIN_STEPS=10000
 SAMPLE_1_OF_N_EVAL_EXAMPLES=1
 python3 object_detection/model_main_tf2.py \

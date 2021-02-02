@@ -1,7 +1,7 @@
 cd ~/TensorFlow/models/research 
 CONFIG_PATH=gs://object-detection-pipeline-demo/workspace/local/pre-trained-models/ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8/pipeline.config
-MODEL_DIR=gs://object-detection-pipeline-demo/workspace/local/model-checkpoints/2
-EXPORT_MODEL=gs://object-detection-pipeline-demo/workspace/local/exported-models/2
+MODEL_DIR=gs://object-detection-pipeline-demo/workspace/local/model-checkpoints/3
+EXPORT_MODEL=gs://object-detection-pipeline-demo/workspace/local/exported-models/3
 python3 object_detection/exporter_main_v2.py \
     --input_type image_tensor \
     --pipeline_config_path $CONFIG_PATH \
