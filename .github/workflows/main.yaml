@@ -31,5 +31,6 @@ jobs:
           chmod +x export_model.sh
           chmod +x download_model.sh
           ./download_model.sh
+          python3 pipeline_config.py
           ./start_training.sh
           ./export_model.sh
