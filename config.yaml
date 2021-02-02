@@ -1,0 +1,12 @@
+# define path 
+
+FINE_TUNE_CHECKPOINT_TYPE : 'detection'
+FINE_TUNE_CHECKPOINT : gs://object-detection-pipeline-demo/workspace/local/pre-trained-models/ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8/checkpoint/ckpt-0
+TRAIN_TFRECORD : gs://object-detection-pipeline-demo/workspace/local/annotations/TRAIN/default.tfrecord
+TEST_TFRECORD : gs://object-detection-pipeline-demo/workspace/local/annotations/TEST/default.tfrecord
+CONFIG_PATH : gs://object-detection-pipeline-demo/workspace/local/pre-trained-models/ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8/pipeline.config
+LABEL_MAP : gs://object-detection-pipeline-demo/workspace/local/annotations/TRAIN/label_map.pbtxt
+NUM_CLASSES : 2
+BATCH_SIZE : 10
+NUM_STEPS : 1000
+    

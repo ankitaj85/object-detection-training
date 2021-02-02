@@ -17,4 +17,6 @@ then
 else
    echo "a is not equal to b"
 fi
+# https://cloud.google.com/storage/docs/gsutil/commands/cp#:~:text=The%20gsutil%20cp%20command%20allows%20you%20to%20copy,can%20also%20download%20text%20files%20from%20a%20bucket:
+gsutil -m cp -r  ~/Tensorflow/ gs://object-detection-pipeline-demo/
 #!mv centernet_hg104_512x512_coco17_tpu-8/checkpoint models/research/object_detection/test_data/
