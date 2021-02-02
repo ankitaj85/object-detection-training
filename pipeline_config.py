@@ -5,15 +5,15 @@ import yaml
 with open("config.yaml",'r') as infile:
     config = yaml.load(infile.read(), Loader=yaml.SafeLoader)
 
-FINE_TUNE_CHECKPOINT_TYPE = config.FINE_TUNE_CHECKPOINT_TYPE
-FINE_TUNE_CHECKPOINT      = config.FINE_TUNE_CHECKPOINT
-TRAIN_TFRECORD            = [config.TRAIN_TFRECORD]
-TEST_TFRECORD             = [config.TEST_TFRECORD]
-CONFIG_PATH               = config.CONFIG_PATH
-NUM_CLASSES               = config.NUM_CLASSES
-BATCH_SIZE                = config.BATCH_SIZE
-LABEL_MAP                 = config.LABEL_MAP
-NUM_STEPS                 = config.NUM_STEPS
+FINE_TUNE_CHECKPOINT_TYPE = config["FINE_TUNE_CHECKPOINT_TYPE"]
+FINE_TUNE_CHECKPOINT      = config["FINE_TUNE_CHECKPOINT"]
+TRAIN_TFRECORD            = [config["TRAIN_TFRECORD"]]
+TEST_TFRECORD             = [config["TEST_TFRECORD"]]
+CONFIG_PATH               = config["CONFIG_PATH"]
+NUM_CLASSES               = config["NUM_CLASSES"]
+BATCH_SIZE                = config["BATCH_SIZE"]
+LABEL_MAP                 = config["LABEL_MAP"]
+NUM_STEPS                 = config["NUM_STEPS"]
 
 
 import tensorflow as tf
