@@ -29,5 +29,7 @@ jobs:
         run: |
           chmod +x start_training.sh
           chmod +x export_model.sh
+          chmod +x download_model.sh
+          ./download_model.sh
           ./start_training.sh
           ./export_model.sh
