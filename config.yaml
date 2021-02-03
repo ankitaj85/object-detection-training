@@ -7,7 +7,7 @@ TEST_TFRECORD : gs://object-detection-pipeline-demo/workspace/local/annotations/
 CONFIG_PATH : gs://object-detection-pipeline-demo/workspace/local/pre-trained-models/ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8/pipeline.config
 LABEL_MAP : gs://object-detection-pipeline-demo/workspace/local/annotations/TRAIN/label_map.pbtxt
 NUM_CLASSES : 2
-BATCH_SIZE : 10
+BATCH_SIZE : 2
 NUM_STEPS : 2
 LR_TOTAL_STEPS : 2
 LR_WARMUP_STEPS : 1
