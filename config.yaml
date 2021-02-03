@@ -8,6 +8,6 @@ CONFIG_PATH : gs://object-detection-pipeline-demo/workspace/local/pre-trained-mo
 LABEL_MAP : gs://object-detection-pipeline-demo/workspace/local/annotations/TRAIN/label_map.pbtxt
 NUM_CLASSES : 2
 BATCH_SIZE : 10
-NUM_STEPS : 10
-LR_TOTAL_STEPS : 10
-LR_WARMUP_STEPS : 5
+NUM_STEPS : 2
+LR_TOTAL_STEPS : 2
+LR_WARMUP_STEPS : 1
